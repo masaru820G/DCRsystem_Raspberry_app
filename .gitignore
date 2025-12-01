@@ -10,6 +10,3 @@ wheels/
 .venv
 
 # Python files
-alert.py
-turntable_ver2.py
-server_app.py

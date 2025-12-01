@@ -16,12 +16,12 @@ class MotorController:
         GPIO.setmode(GPIO.BCM)
 
         #GPIOピン設定
-        self.PUL_pin = 14
         self.DIR_pin = 15
+        self.PUL_pin = 17
         self.ENA_pin = 18
 
-        GPIO.setup(self.PUL_pin, GPIO.OUT, initial=GPIO.LOW)
         GPIO.setup(self.DIR_pin, GPIO.OUT, initial=GPIO.LOW)
+        GPIO.setup(self.PUL_pin, GPIO.OUT, initial=GPIO.LOW)
         GPIO.setup(self.ENA_pin, GPIO.OUT, initial=GPIO.LOW)
         GPIO.output(self.DIR_pin, 0) # DIR=LOW -> 反時計回り
 
